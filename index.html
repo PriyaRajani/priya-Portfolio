@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2A3335;
+            background: linear-gradient(120deg, #FFCFEF, #F9C0AB);
+            animation: gradient-bg 10s ease infinite;
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradient-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            /* background: #0A97B0; */
+            background: linear-gradient(90deg, #e52e71, #ff8a00);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #F9C0AB;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #0A5EB0;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+            color: #2A3335;
+        }
+
+        section {
+            padding: 4rem;
+            max-width: 1000px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: #0A97B0;
+            margin-bottom: 1rem;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .project {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #FFCFEF, #F9C0AB);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .project h3 {
+            margin-bottom: 0.8rem;
+            color: #0A97B0;
+        }
+
+        .project p, .project ul {
+            margin-left: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #8286b5;
+            color: white;
+            box-shadow: 0 -4px 10px rgba(61, 60, 60, 0.3);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            color: white;
+            background: #0A97B0;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background: #0A5EB0;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        a {
+            color: #0A97B0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm Priya!</h1>
+        <p>A passionate UI/UX designer creating intuitive and user-centered digital experiences.</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Priya, a final-year student at Marwadi University (GTU) with a strong passion for crafting digital experiences that prioritize usability and accessibility. My journey in design started with web development, where I discovered my love for creating user-friendly interfaces. I specialize in translating complex ideas into simple, visually appealing designs.</p>
+        <p><strong>Tools I Use:</strong> Figma, Canva, HTML, CSS, JavaScript, React</p>
+        <p><strong>Checkout mu github here:</strong> <a href="https://github.com/PriyaRajani">Github</a></p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Notes App</h3>
+            <p><strong>Brief:</strong> A simple and efficient note-taking app for organizing daily tasks and ideas.</p>
+            <p><strong>Problem:</strong> Users needed an intuitive way to jot down and categorize their notes.</p>
+            <p><strong>Process:</strong></p>
+            <ul>
+                <li>Designed a user-friendly interface with clear categories and search functionality.</li>
+                <li>Implemented features like color-coded notes, tagging, and quick editing.</li>
+                <li>Tested the design for usability and accessibility with potential users.</li>
+            </ul>
+            <p><strong>Outcome:</strong> Enhanced productivity and better task management for users.</p>
+        </div>
+
+        <div class="project">
+            <h3>Payswift (Integrated Payment System)</h3>
+            <p><strong>Brief:</strong> A secure and user-friendly platform for bill payments and ticket booking.</p>
+            <p><strong>Role:</strong> Led UI design and collaborated with developers to create interactive prototypes.</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+                <li>Designed an intuitive dashboard for tracking transactions.</li>
+                <li>Focused on secure payment flows with clear, visual feedback for users.</li>
+                <li>Enhanced user engagement with personalized account management.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Let’s create something amazing together!</p>
+        <p><strong>Email:</strong> <a href="mailto:piyurajani123@gmail.com">piyurajani123@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priya-rajani-01342523b/">My LinkedIn Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Priya's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
